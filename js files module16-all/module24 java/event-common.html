@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="clicking-method"></p>
+    <input id="filed" type="text">
+    <button id="update-name">Update</button>
+    <button onclick="handelJustFunctiononclick()">just function</button>
+    <button id="direct">direct and Event Listener</button>
+    <script>
+        function handelJustFunctiononclick() {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by using function';
+        }
+        //direct
+        document.getElementById('direct').addEventListener('click', function () {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by direct lisener';
+        }
+        )
+        //direct
+        document.getElementById('update-name').addEventListener('click', function () {
+            const filed = document.getElementById('filed');
+            const p = document.getElementById('clicking-method');
+            p.innerText = filed.value;
+            filed.value = '';
+        })
+    </script>
+
+
+</body>
+
+</html>

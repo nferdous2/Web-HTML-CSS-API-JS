@@ -1,0 +1,1 @@
+const marks= 60;const resubmit = -5; console.log(!(marks > 0 || resubmit > 0));

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>refresh</h1>
+    <button onclick="refreshPage()">Refresh</button>
+    <button onclick="visitPage()">Visit page</button>
+    <script>
+        const refreshPage = () => {
+            location.reload();
+        }
+        const visitPage = () => {
+            location.assign('https://github.com/ProgrammingHero1?tab=repositories')
+        }
+    </script>
+</body>
+
+</html>

@@ -31,7 +31,6 @@ function showData(data) {
     const div = document.createElement("div");
     div.classList.add("col-md-3");
     // if(item.cover_i === undefined){
-
     // }
     div.innerHTML = `
           <!-- Image -->

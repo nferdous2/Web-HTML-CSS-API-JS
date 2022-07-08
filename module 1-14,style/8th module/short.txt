@@ -1,0 +1,1 @@
+.menu-container>.food*8>img[src="food.jpg"]+h2{Price:$@100}+p>lorem50+br+button{Order now}

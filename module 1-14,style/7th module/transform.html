@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container,
+        .inner {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        .container {
+            background-color: cornflowerblue;
+        }
+
+        .inner {
+            background-color: crimson;
+            transform: scale(0.5);
+        }
+
+        .box,
+        .in {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        .box {
+            background-color: cornflowerblue;
+        }
+
+        .in{
+            background-color: crimson;
+            transform: rotate(30deg) scale(0.5) translate(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transformer i am coming</h1>
+    <div class="box container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-3</div>
+    </div>
+    <br>
+    <div class="box">
+        <div class="in">box-2</div>
+    </div>
+    <div class="box">
+        <div class="in">box-3</div>
+    </div>
+</body>
+
+</html>

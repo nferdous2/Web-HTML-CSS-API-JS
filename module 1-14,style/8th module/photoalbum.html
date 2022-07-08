@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo album</title>
+    <style>
+        .album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .frame {
+            width: 300px;
+            height: 200px;
+            border: 2px solid pink;
+            border-radius: 10px;
+            position: relative;
+            margin: 2%;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .photo-detail h3 {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        .photo-detail p {
+            color: greenyellow
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: 0;
+        }
+
+        .frame:hover .photo-detail {
+            display: block;
+            background-color: rgba(235, 163, 235, 0.37);
+            width: 99%;
+        }
+
+        .frame:hover .photo {
+            transform: scale(1.5) rotate(360deg);
+            transition: transform 2s ease-in-out;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My awesome photo album</h1>
+    <section>
+        <h3>Tiger Album</h3>
+        <div class="album">
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="photo">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>
+                        Tiger photo
+                    </h3>
+                    <p>Sanctus amet invidunt consetetur diam lorem dolores amet lorem. Diam aliquyam ipsum eirmod dolor
+                        eirmod sed dolores at accusam. Diam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

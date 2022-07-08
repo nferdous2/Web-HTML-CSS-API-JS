@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web layout</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 3px dashed hotpink;
+            font-size: 3em;
+        }
+
+        .container {
+            /*justify-content:space-between ,space-evenly=shbdike shoman jayga rakbe,around =2pashe shoman hishb*/
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            /*horijental content holo justify*/
+            border: 2px solid slateblue;
+            align-items: center;
+            /*vertical content holo align*/
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        I am flex now
+    </h3>
+    <div class="container">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+    </div>
+
+</body>
+
+</html>

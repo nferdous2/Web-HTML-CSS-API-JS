@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 250px;
+            width: 250px;
+
+        }
+
+        .dummy1 {
+            background-color: blueviolet;
+            position: absolute;
+            z-index: -2;
+
+        }
+
+        .dummy2 {
+            background-color: violet;
+            position: sticky;
+            left: 30px;
+            top: 20px;
+            z-index: 10;
+        }
+
+        .dummy3 {
+            background-color: red;
+            position: relative;
+            left: 40px;
+            top: -220px;
+            z-index: 30;
+        }
+
+        .big {
+            background-color: seagreen;
+        }
+
+        img {
+            top: -80px;
+            height: 50%;
+            width: 50%;
+        }
+
+        .div #small {
+            top: 400px;
+            left: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="dummy1"></div>
+        <div class="dummy2"></div>
+        <div class="dummy3"></div>
+        <div>
+            <div id="small"><img src="images.jpg"></div>
+        </div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+        <div class="big"></div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*pseudoclass hole: ,element hole::,use korte hoy*/
+        h1:hover {
+            color: blueviolet;
+        }
+
+        h1 {
+            color: aqua
+        }
+
+        .mix:focus {
+            color: red;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        li:first-child {
+            color: salmon;
+        }
+
+        li:last-child {
+            background-color: slateblue;
+        }
+
+        li:nth-child(2n)
+
+        /*n er man 2 hole 2n=4; even number*/
+            {
+            color: springgreen;
+        }
+
+        li:nth-child(2n+1)
+
+        /*n er man 1 hole ekhane hobe 3.odd number*/
+            {
+            color: gold;
+        }
+
+        h3::before {
+            content: 'Hello ';
+        }
+
+        h3::after {
+            content: '  bye';
+            background-color: chartreuse;
+            font-size: 30px;
+        }
+
+        .special::after {
+            content: 'hi';
+            background-color: red;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>this is h1</h1>
+    <input class="mix" type="text"><br>
+    <a href="https://www.youtube.com/">youtube</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.amazon.com/">Amazon</a>
+    <br>
+    <ul>
+        <li>AAA</li>
+        <li>BBBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+        <li>EEE</li>
+        <li>FFF</li>
+        <li>GGG</li>
+        <li>HHHH</li>
+    </ul>
+    <br>
+    <h3>This is header 1</h3>
+    <h3>This is header 2</h3>
+    <h3>This is header 3</h3>
+    <h3>This is header 4</h3>
+    <h3>This is header 5</h3>
+    <h3>This is header 6</h3>
+    <br>
+    <h4>This is h4 -1</h4>
+    <h4 class="special">This is h4 -2</h4>
+    <h4>This is h4 -3</h4>
+</body>
+
+</html>
